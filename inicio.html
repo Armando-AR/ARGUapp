@@ -13,12 +13,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <title>ARGUapp</title>
+    <link rel="icon" href="./img/home.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="./CSS/a.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./CSS/tareaNueva.css">
+    <title>AGTA</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">ARGUapp</a>
+        <a class="navbar-brand" href="#"> <img src="img/log.png"
+          width="50"
+          height="50"><b style="font-family:Bradley Hand">AMGTA</b></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,7 +44,7 @@
           aria-labelledby="offcanvasDarkNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="font-family:American Typewriter (serif)" >
               MENU PRINCIPAL
             </h5>
             <button
@@ -49,28 +57,42 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill"></i> Home</a>
+                <a class="nav-link active" aria-current="page" href="#" style="font-family:'Courier New', Courier, monospace"><i class="bi bi-house-fill"></i> Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-plus-square-fill"></i> Crear tarea</a>
+                <a class="nav-link" href="./Tareas/NuevaTarea.html" style="font-family:'Courier New', Courier, monospace"><i class="bi bi-plus-square-fill"></i> Crear tarea</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-pencil-square"></i> Editar o eliminar tarea</a>
+                <a class="nav-link" href="./Tareas/ModificarTarea.html" style="font-family:'Courier New', Courier, monospace"><i class="bi bi-pencil-square"></i> Editar o eliminar tarea</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="bi bi-calendar-check-fill"></i> Calendario</a
+                <a class="nav-link" href="./Tareas/calendario.html"
+                style="font-family:'Courier New', Courier, monospace"><i class="bi bi-calendar-check-fill" ></i> Calendario</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-person-fill-gear"></i> Configuracion de cuenta</a>
+                <a class="nav-link" href="#" style="font-family:'Courier New', Courier, monospace"><i class="bi bi-person-fill-gear" ></i> Configuración de cuenta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html" style="font-family:'Courier New', Courier, monospace" id="logout"><i class="bi bi-box-arrow-left"></i> Cerrar sesion</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
+    <div class="main-w3layouts wrapper">
 
+      <br><br><br>
+        <div class="main-agileinfo">
+          <div class="agileits-top">
+            <h1>Tareas por hacer</h1>
+            <br><br>
+            <div class="list-group" id="list-container"></div>
+          </div>
+          </div>
+        </div>
+      </div>
     <script
       async
       src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
@@ -89,5 +111,7 @@
 
       new bootstrap.Popover(document.getElementById("popoverButton"));
     </script>
+    <script type ="module" src = "./JS/logout.js"></script>
+    <script type="module" src="./JS/inicio.js"></script>
   </body>
 </html>
